@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(assets/img/bg.jpg);
+  height: 70vh;
+  background-size: max(1200px, 100vw);
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  top: 0;
+  position: absolute;
+}
+
+nav {
+  max-width: 80vw;
+  height: 100px;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+nav img {
+  color: red;
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  height: calc(100% - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 23px;
+}
+
+.hero > :first-child {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.separation {
+  height: 6px;
+  background-color: gray;
+}
+
+.btn {
+  padding: 3px 9px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.032);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 6px 24px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main input {
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(221, 196, 196, 0.5);
+  color: white;
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+
+    .first{
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+}
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  padding-top: 12px;
+  height: 24%;
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 11%;
+  right: 21%;
+  width: 54%;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first > div :nth-child(2) {
+  font-size: 24px;
+}
+
+.faq {
+  background: black;
+  color: white;
+}
+
+.faq h2 {
+  text-align: center;
+  padding: 30px;
+}
+.faqbox {
+  display: flex;
+  background-color: rgb(73, 70, 70);
+  padding: 34px;
+  max-width: 60vw;
+  margin: 14px auto;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.faqbox:hover {
+  background-color: rgb(34, 32, 32);
+}
+
+footer {
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+}
+
+@media  screen and (max-width: 1300px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav{
+        max-width: 90vw;
+    }
+    .secImg img{
+        width: 305px;
+    }
+    /* .secImg video{
+        width: 305px;
+    } */
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 18px;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .faq h2{
+        text-align: center;
+        font-size: 32px;
+    }
+    footer{
+        max-width: 90vw;
+        padding: 75px 0px;
+    }
+    .footer-item{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+    .footer a {
+        font-size: 14px;
+        color: white;
+    }
+} 
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 34px 0px;
+  gap: 12px;
+}
+
+footer span {
+    margin: 2px 18.8vw;
+
+}
+
+.footer a {    
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
